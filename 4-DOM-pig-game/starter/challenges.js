@@ -59,11 +59,11 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
         // update the UI
         document.querySelector("#score-" + activePlayer).textContent = scores[activePlayer];
         
-        var input = document.querySelector(".final-score").nodeValue;
+        var input = Number(document.querySelector(".final-score").value);
         var winningScore;
 
-        if(input) {
-            winningScore = input;
+        if(input != NaN) {
+            winningScore = input; 
         } else {
             winningScore = 100;
         }
