@@ -12,3 +12,13 @@ Section 5: Objects & Functions
 
 * inheritance is when one object gets access to anoter object's properties and methods
 * function constructors are always written with a capital letter
+
+## First Class Functions Summary
+* a function is an instance of the Object type;
+* a function behaves like any other object;
+* we can store functions in a variable;
+* we can pass a function as an argument to another function;
+* we can return a function from a function
+
+## Closures
+* an inner function always has access to the variables and parameters of its outer function even after the outer function has returned
