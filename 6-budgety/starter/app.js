@@ -245,14 +245,13 @@ var UIController = (function() {
         },
 
         displayPercentages: function(percentagesArr) {
-            var fields, nodeListForEach;
+            var fields;
 
             fields = document.querySelectorAll(DOMStrings.expensePercLabel);
 
             nodeListForEach(fields, function(cur, idx) {
                 if(percentagesArr[idx] > 0) {
                     cur.textContent = percentagesArr[idx] + "%";
-                    console.log("test");
                 } else {
                     cur.textContent = "---";
                 }
